@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Location</title>
+</head>
+<body>
+    <h1>Enter Your Location</h1>
+    <p>Your latitude and longitude are displayed below:</p>
+    <p id="location"></p>
+    <script>
+        // This script should ideally fetch the user's location using Geolocation API
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                document.getElementById("location").innerText = 
+                    "Latitude: " + position.coords.latitude + 
+                    ", Longitude: " + position.coords.longitude;
+            });
+        } else {
+            document.getElementById("location").innerText = "Geolocation is not supported by this browser.";
+        }
+    </script>
+</body>
+</html>

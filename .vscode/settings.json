@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Users\\admin\\Desktop\\weather\\lib\\json-20240303.jar"
+    ]
+}
